@@ -24,3 +24,5 @@ cd clase-02-Componentes/
 ng serve -o
 ```
 Gracias
+
+![](https://github.com/martin-daguerre-pyxis/Curso-Angular_Martin-Daguerre/blob/Componentes-Mart%C3%ADn-Daguerre-clase-2/clase-02-Componentes/Captura-de-pantalla.png?raw=true)
