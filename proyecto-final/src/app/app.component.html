@@ -1,0 +1,28 @@
+<app-icons></app-icons>
+<mat-toolbar class="site-header">
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="font-sans fs-1">Administración</span>
+  
+  <app-toolbar class="toolbar"></app-toolbar>
+</mat-toolbar>
+<mat-sidenav-container class="site-container">
+  <mat-sidenav #sidenav mode="side" class="site-sidenav" 
+  [fixedInViewport]="options.fixed" [opened]="options.opened" 
+    [fixedTopGap]="options.top" [fixedBottomGap]="options.bottom">
+    <app-navbar class="navbar"></app-navbar>
+  </mat-sidenav>
+
+  <mat-sidenav-content >
+    <div class="site-content">
+      <router-outlet />
+      <app-students class="students"></app-students>
+      
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<mat-toolbar class="h-12 site-footer">
+  <app-footer class="w-full"></app-footer>
+</mat-toolbar>

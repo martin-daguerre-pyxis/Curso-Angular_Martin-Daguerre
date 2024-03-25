@@ -1,0 +1,74 @@
+@layer base {
+  body {
+    @apply overflow-x-hidden max-w-[100vw] p-0 m-0 font-body scroll-smooth;
+  }
+
+  hr {
+    @apply border-0 border-gray-100/50 border-solid border-t w-full;
+  }
+}
+
+.bi {
+  @apply w-7 h-7 fill-current inline-block;
+}
+
+svg.bi {
+  @apply fill-current w-7 h-7 p-1;
+}
+
+.link-secondary.icon {
+  @apply w-12 h-12 flex items-center justify-center rounded-full;
+
+  &:hover {
+    @apply bg-gray-100/10;
+  }
+
+  svg.bi {
+    @apply w-6 h-6 p-1 fill-white;
+  }
+}
+
+.divider {
+  @apply w-full h-0.5 bg-gray-100/50 border-0 border-solid border-t shadow-sm;
+}
+
+body app-root {
+  @apply flex flex-col min-h-screen;
+
+  .site-container {
+    @apply absolute top-16 bottom-12 left-0 right-0;
+  }
+
+  .site-content {
+    @apply p-5;
+  }
+
+  .site-sidenav {
+    @apply fixed top-16 left-0 bottom-12 w-64 bg-slate-200 dark:bg-slate-900;
+  }
+
+  .site-header {
+    @apply fixed top-0 left-0 right-0 justify-between flex-wrap bg-slate-200 dark:bg-slate-900;
+  }
+
+  .site-footer {
+    @apply fixed flex-col w-full justify-between items-center bottom-0 left-0 right-0 bg-slate-200 dark:bg-slate-900;
+  }
+
+  .bg-red-500{
+    @apply bg-red-500/10;
+  }
+  .bg-green-500{
+    @apply bg-green-500/10;
+  }
+  .bg-blue-500{
+    @apply bg-blue-500/10;
+  }
+
+  .mat-drawer-container{
+    @apply bg-transparent dark:bg-transparent;
+  }
+  .mat-mdc-table {
+    @apply bg-transparent dark:bg-transparent;
+  }
+}

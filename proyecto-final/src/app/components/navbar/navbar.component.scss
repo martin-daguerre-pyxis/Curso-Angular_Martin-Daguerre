@@ -1,0 +1,32 @@
+#sidebarMenu {
+    @apply w-full;
+
+    .offcanvas-body {
+        @apply p-0 overflow-hidden flex items-stretch w-full justify-between flex-col h-[calc(100vh-7rem)] bg-slate-300 dark:bg-slate-900;
+    }
+
+    .bi {
+        @apply fill-current w-6 h-6;
+    }
+
+    #logo {
+        @apply px-8 py-0 flex mt-0 mb-0 h-auto;
+
+        svg {
+            @apply fill-slate-800 dark:fill-slate-200 h-auto w-40;
+        }
+    }
+
+    .nav {
+        @apply py-0 px-5;
+
+        .nav-item {
+            @apply w-full list-none p-0 m-0;
+
+            a.nav-link {
+                @apply text-slate-800 decoration-transparent dark:text-slate-200 flex items-center;
+            }
+        }
+    }
+
+}
