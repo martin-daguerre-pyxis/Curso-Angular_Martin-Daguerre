@@ -1,0 +1,42 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+// Importa tus variables de colores personalizadas
+@import "./scss/variables";
+
+// Define tu paleta de colores primarios y secundarios
+$proyecto-final-primary: mat.define-palette($md-primary);
+$proyecto-final-accent: mat.define-palette($md-accent);
+
+// Define tu paleta de colores primarios y secundarios DARK
+$proyecto-final-primary-dark: mat.define-palette($md-primary);
+$proyecto-final-accent-dark: mat.define-palette($md-accent);
+
+// Define tu tema claro
+$proyecto-final-light-theme: mat.define-light-theme((color: (primary: $proyecto-final-primary,
+        accent: $proyecto-final-accent,
+      ),
+      typography: mat.define-typography-config(),
+      density: 0));
+
+// Define tu tema oscuro
+$proyecto-final-dark-theme: mat.define-dark-theme((color: (primary: $proyecto-final-primary-dark,
+        accent: $proyecto-final-accent-dark,
+      ),
+      density: 1));
+
+// Incluye ambos temas para todos los componentes
+@include mat.all-component-themes($proyecto-final-light-theme);
+.dark {
+  @include mat.all-component-themes($proyecto-final-dark-theme);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./scss/custom";
