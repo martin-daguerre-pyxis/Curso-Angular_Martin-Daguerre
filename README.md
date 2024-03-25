@@ -1,28 +1,30 @@
 
-#### Clase 2 - DESAFÍO ENTREGABLE
-## Integrando conocimientos
+#### Clase 4 - DESAFÍO ENTREGABLE
+## Interpolación y Directivas
 #### Consigna
 
-Crear un layout general con menú a la izquierda, un toolbar y un área de contenido. Cada uno de los apartados del layout será un componente independiente y tendrá su propia hoja de estilos y contenido html. Todos ellos integrados en el app.component.html
+Entregar un proyecto que dado un array de alumnos los muestre en forma de lista y aplique diferentes estilos según algunas condiciones 🙌.
 
  #### Aspectos a incluir
-Se espera la entrega de un proyecto configurado funcional utilizando creación de componentes. Se valorará la utilización de la librería bootstrap para la colocación de los componentes.
+Se espera la entrega de un proyecto configurado y funcional utilizando creación de componentes.
+Recuerda hacer uso correcto de directivas (estructurales y de atributo) y pipes.
 
 #### Formato
 Se debe entregar un proyecto con el formato ANGULAR-CLI. Lo vamos a nombrar como  “Componentes+Apellido”.
 
-#### Sugerencias
-Utiliza ANGULAR-CLI para generar un proyecto con componentes personalizados.
-Algunas ideas que pueden desarrollar:
-Página personal con enlaces a sus redes sociales.
-Página que muestre destinos turísticos en forma de tarjeta.
-Página de descripción de un producto.
-
+#### Agregados al proyecto
+Incorporación de:
+- Angular Material
+- TailwindCSS 
+- Servicio de Cambio de Modos (Ligkt/Dark) guardando en LocalStorage (este servicio lo reutilicé de otro proyecto en el que he trabajado).
+- Quito Bootstrap
 
 ```
-cd clase-02-Componentes/
+cd proyecto-final/
 ng serve -o
 ```
-Gracias
 
-![](https://github.com/martin-daguerre-pyxis/Curso-Angular_Martin-Daguerre/blob/Componentes-Mart%C3%ADn-Daguerre-clase-2/clase-02-Componentes/Captura-de-pantalla.png?raw=true)
+#### Ubicación local del componente, interface de estudiantes y datos.
+- proyecto-final/src/app/components/students/
+
+Gracias
