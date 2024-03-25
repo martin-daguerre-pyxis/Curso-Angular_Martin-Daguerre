@@ -28,3 +28,5 @@ ng serve -o
 - proyecto-final/src/app/components/students/
 
 Gracias
+
+![](https://github.com/martin-daguerre-pyxis/Curso-Angular_Martin-Daguerre/blob/actividad-practica/2da-actividad/proyecto-final/Captura%20de%20pantalla.png?raw=true)

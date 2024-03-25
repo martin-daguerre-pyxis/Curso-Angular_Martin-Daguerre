@@ -1,27 +1,32 @@
-# ProyectoFinal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+#### Clase 4 - DESAFÍO ENTREGABLE
+## Interpolación y Directivas
+#### Consigna
 
-## Development server
+Entregar un proyecto que dado un array de alumnos los muestre en forma de lista y aplique diferentes estilos según algunas condiciones 🙌.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ #### Aspectos a incluir
+Se espera la entrega de un proyecto configurado y funcional utilizando creación de componentes.
+Recuerda hacer uso correcto de directivas (estructurales y de atributo) y pipes.
 
-## Code scaffolding
+#### Formato
+Se debe entregar un proyecto con el formato ANGULAR-CLI. Lo vamos a nombrar como  “Componentes+Apellido”.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Agregados al proyecto
+Incorporación de:
+- Angular Material
+- TailwindCSS 
+- Servicio de Cambio de Modos (Ligkt/Dark) guardando en LocalStorage (este servicio lo reutilicé de otro proyecto en el que he trabajado).
+- Quito Bootstrap
 
-## Build
+```
+cd proyecto-final/
+ng serve -o
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Ubicación local del componente, interface de estudiantes y datos.
+- proyecto-final/src/app/components/students/
 
-## Running unit tests
+Gracias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![](https://github.com/martin-daguerre-pyxis/Curso-Angular_Martin-Daguerre/blob/actividad-practica/2da-actividad/proyecto-final/Captura%20de%20pantalla.png?raw=true)
